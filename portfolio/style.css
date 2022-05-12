@@ -1,0 +1,540 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Poppins:wght@200&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background-image: linear-gradient(#ffe000 ,#799f0c)
+
+}
+html
+{
+    color: white;
+font-size: 30px;
+letter-spacing: 2px;
+}
+
+/* navbar section
+
+
+*/
+.nav
+{
+    top:10px;
+background-color:#0000006e;
+    position:absolute;
+    width: 100vw;
+    height: 10vh;
+    display: block;
+
+}
+.left h1
+{
+    left: 200px;
+    position:absolute;
+padding-top:10px ;
+font-size: 30px;
+}
+
+.left span
+{
+color: rgb(247, 0, 0);
+}
+
+.right ul
+{
+ left: 600px;   
+ padding-top: 10px ;
+ padding-left:20px;
+    position:absolute;
+    top:0px;
+    display: block;
+}
+.right ul li
+{
+
+    list-style: none;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.right a
+{
+    color: white;
+    font-size: 20px;
+    padding:  5px;
+    transition: 2.3s ease;
+    text-decoration: none;
+}
+.right a:hover
+{
+    color: darkblue;
+    background-color: gold;
+}
+
+.section
+{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7) ), url("images/Screenshot\ \(98\).png");
+    background-size: cover;
+width: 100vw;
+height: 100vh;
+background-position:top;
+
+}
+
+
+
+
+   /* 
+   name
+  
+  
+   */
+
+
+
+   .title
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 50px;
+    position: relative;
+        top:100px;
+    justify-content: flex-start;
+}
+/* anchor section  */
+.title a
+{
+    text-decoration: none;
+    background-color:white;
+    position: relative;
+    top:150px;
+    color:white;
+    display: block;
+    width: 150px;
+    padding:4px 40px;
+    left: 150px;
+    margin-top: 20px;
+    background-color:transparent;
+    border: 2px solid red;
+    transition: 0.30s ease ;
+
+}
+
+.title a:hover
+{
+background-color:gold;
+color:red;
+}
+
+/* name section 
+
+
+*/
+
+
+.title h1
+{
+    color: transparent;
+    animation: text 0.5s ease forwards;
+    animation-delay: 1s;
+    position: relative;
+    top:150px;
+    left: 150px;
+    display: block;
+    width: fit-content;
+    height: 70px;
+    font-size: 2rem;
+
+}
+.title h1 span
+{
+    position:absolute;
+    top:0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color:rgba(21, 255, 0, 0.616);
+    animation: text_rev 1s ease;
+    animation-delay: 0.5s;
+    
+}
+
+
+
+
+
+
+
+.title h1:nth-child(1)
+{
+    animation-delay: 1s;
+}
+.title h1:nth-child(2)
+{
+    animation-delay: 2s;
+}
+.title h1:nth-child(3)
+{
+    animation: text_name 0.5s ease forwards;
+    font-size: 2rem;
+    animation-delay: 3s;
+}
+
+
+
+.title h1:nth-child(1) span
+{
+    
+animation-delay: 0.5s;    
+
+}
+
+.title h1:nth-child(2) span
+{
+    
+animation-delay: 1.5s;    
+}
+
+.title h1:nth-child(3) span
+{
+    
+animation-delay: 2.5s;    
+}
+
+@keyframes text_rev
+{
+    50%
+    {
+        width: 100%;
+        left: 0px;
+    }
+    100%
+    {
+        left: 100%;
+        width: 0px;
+    }
+}
+
+
+@keyframes  text
+{
+    100%
+    {
+        color: white;
+    }
+}
+@keyframes  text_name
+{
+    100%
+    {
+        color:crimson;
+        font-weight: 500px;
+    }
+}
+/* 
+
+services section  
+
+
+*/
+.services
+{
+    position: relative;
+    color: black;
+    top:100px;
+    left: 500px;
+
+}
+.services h1
+{
+    font-weight: 0px;
+position: relative;
+left: 100px;
+letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.services p
+{
+    color: #00000094;
+    width: 500px;
+    left: -30px;
+    position: relative;
+    font-size: 20px;
+
+}
+
+/* div boxes */
+.container
+{
+    display: block;
+    width: 100vw;
+    left: -400px;
+    top:40px;
+        position: relative;
+}
+.item
+{
+
+    margin-left: 20px;
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    background-image: linear-gradient(#0f2027,#203a43);
+    color: white;
+}
+.item h1
+{
+    position: relative;
+    left: 40px;
+    top:30px;
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+.item p
+{
+    top:40px;
+    left: 30px;
+    color: white;
+    letter-spacing: 0px;
+    font-size: 13px;
+    width: 250px;
+    
+}
+
+/* 
+
+projects section 
+
+*/
+.projectsection
+{
+    
+    color: black;
+    height: 900px;
+    display: block;
+    position: relative;
+    margin-top: 250px;
+    margin-bottom: 0px;
+}
+.projectsection h3
+{
+    position: relative;
+    left:500px;
+    margin-bottom: 40px;
+}
+.pro
+{
+    height: 600px;
+margin: 0px;
+
+    display:block;
+    width: 88%;
+    height: 700px;
+    position: relative;
+    left: 40px;
+    background-image: linear-gradient(#085078,#85d8ce);
+}
+
+.projectsection img 
+{
+    background-color: white;
+    position: relative;
+ top:-278px; 
+    
+    width: 700px;
+    background-position: center;
+    left:560px;
+    display:inline-block;
+    margin-bottom: 0px;
+    height: 700px;
+
+}
+#img1
+{
+    position: relative;
+    top:-406px;
+    width: 677px;
+}
+#img2
+{
+    position:relative;
+    top:-406px;
+width: 677px;
+}
+#img3
+{
+    position: relative;
+    top:-316px;
+    width: 677px;
+}
+#img4
+{
+    position: relative;
+    top:-223px;
+    width: 677px;
+}
+.pro h1
+{
+    position: relative;
+    top:30px;
+    left: 30px;
+}
+.pro h2
+{
+    left: 30px;
+    top:50px;
+    position: relative;
+}
+.pro p
+{
+    left: 30px;
+    top:70px;
+    width: 400px;
+    position: relative;
+}
+ hr
+{
+
+    width: 400px;
+    position: relative;
+    left: 40px;
+    background-color: transparent;
+}
+span
+{
+    color: crimson;
+}
+/* 
+about
+
+
+*/
+.about
+{
+    color: black;
+    position: relative;
+    top:2100px;
+}
+.about h1
+{
+    font-size: 50px;
+    position: relative;
+    left: 400px;
+}
+.about span
+{
+    color: crimson;
+}
+.about h2
+{
+    position: relative;
+    font-size: 40px;
+    left: 380px;
+    letter-spacing: 0px;
+}
+.about p
+{
+    position: relative;
+    font-size: 30px;
+    left: 380px;
+    letter-spacing: 0px;
+    width: 700px;
+    font-size: 20px;
+}
+.about a
+{
+    position: relative;
+    left: 400px;
+    top:-240px;
+    padding: 10px;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    border: 2px solid red;
+    letter-spacing: 0px;
+    font-weight: bold;
+    transition: 0.30s ease ;
+}
+.about a:hover
+{
+background-color:gold;
+color:red;
+}
+.about img
+{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: -230px;
+    top:-230px;
+}
+
+
+/* Contact  section  */
+
+.contactsection
+{
+    color: black;
+    position: relative;
+    top:1950px;
+}
+.contactsection h3
+{
+    margin-bottom: 30px;
+    position: relative;
+    left: 600px;
+    font-size: 50px;
+}
+.contactsection span
+{
+    color: red;
+}
+.contactdiv
+{
+position: relative;
+left: 130px;
+    display: block;
+top:30px;
+    width: 90vw;
+}
+.contact
+{
+border: 2px solid whitesmoke;
+ background-image: linear-gradient(#0f2027,#203a43);;
+    display:inline-block;
+    width: 30%;
+    height: 200px;
+}
+.contact h1
+{
+    top:30px;
+    position: relative;
+    left: 90px;
+    color: white;
+    font-size: 20px;
+}
+.contact p
+{
+    color: white;
+    left: 90px;
+    top:30px;
+
+    position: relative;
+    font-size: 20px;
+}
+.contact img
+{
+    position: relative;
+    top:-20px;
+}
+#email
+{
+    position: relative;
+    top:-20px;
+}
